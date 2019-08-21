@@ -1,0 +1,7 @@
+Flask
+numpy
+pandas
+scipy
+scikit-learn==0.20.2
+pylint
+joblib
