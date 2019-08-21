@@ -5,11 +5,13 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath=ruipbranco/app
 
 # Step 2:  
 # Authenticate & tag
+cat password_docker.txt | docker login --username=ruipbranco --password-stdin
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath
