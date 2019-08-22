@@ -1,1 +1,14 @@
 <paste log output from Kubernetes-mediated prediction, here>
+(.devops) root@rui-PU301LBB:/home/rui/Documents/devops/DevOps_Microservices/project-ml-microservice-kubernetes# ./run_kubernetes.sh
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or k$
+deployment.apps/kubernetes-nddevopskubernetes created
+NAME                                             READY   STATUS              RESTARTS   AGE
+kubernetes-nddevopskubernetes-5d6fcd7485-v8j6s   0/1     ContainerCreating   0          0s
+Name of the Pod: kubernetes-nddevopskubernetes-5d6fcd7485-v8j6s
+Waiting for POD to be ready...
+NAME                                             READY   STATUS    RESTARTS   AGE
+kubernetes-nddevopskubernetes-5d6fcd7485-v8j6s   1/1     Running   0          11m
+Forwarding from 127.0.0.1:80 -> 80
+Forwarding from [::1]:80 -> 80
+Handling connection for 80
+
