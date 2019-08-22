@@ -21,4 +21,5 @@ echo "Waiting for POD to be ready..."
 sleep 560
 # Step 4:
 # Forward the container port to a host
+kubectl get pods
 kubectl port-forward $POD_NAME 80:80
