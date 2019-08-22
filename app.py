@@ -63,6 +63,7 @@ def predict():
     # get an output prediction from the pretrained model, clf
     prediction = list(clf.predict(scaled_payload))
     # TO DO:  Log the output prediction value
+    LOG.info(f"Output prediction: {prediction}")
     logging.basicConfig(filename='output_txt_files/docker_out.txt', level=logging.DEBUG)
     return jsonify({'prediction': prediction})
 
